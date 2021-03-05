@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,KAAK,EAAE,GAAG;CAAG",
+    "sources": [
+        "../sass/blocks/breadcrunb.sass"
+    ],
+    "names": [],
+    "file": "breadcrunb.css"
+}
