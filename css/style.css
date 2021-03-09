@@ -440,8 +440,23 @@ img {
   border: none;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
   color: #333333;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.search__input::placeholder {
+  color: #BDBDBD;
 }
 
 .search__button {
@@ -589,9 +604,8 @@ img {
   line-height: 10px;
 }
 
-.rating-counter {
-  font-size: 14px;
-  line-height: 18px;
+.rating__all {
+  font-size: 11px;
 }
 
 .swiper-container {
