@@ -683,6 +683,7 @@ img {
 }
 
 .booking {
+  font-family: 'Nunito', sans-serif;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -770,7 +771,7 @@ img {
 
 .booking__heading {
   font-style: normal;
-  font-weight: 800;
+  font-weight: 600;
   font-size: 18px;
   line-height: 25px;
 }
