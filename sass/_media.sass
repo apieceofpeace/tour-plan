@@ -42,6 +42,9 @@
     width: 100%
   .map
     width: 340px
+  iframe
+    width: 340px
+
 @media (max-width: 767px)
   .container
     max-width: 576px
@@ -93,11 +96,21 @@
     width: 100%
   .map
     width: 100%
+  iframe
+    width: 100%
 @media (max-width: 576px)
   .logo
     width: 99px
   .slider
     height: 250px
   .hotel
+    padding-top: 5px
+    &-info
+      padding-bottom: 37px
     &__slider
       margin-bottom: 20px
+@media (max-width: 400px)
+  .swiper-container
+    height: 190px
+  .slider
+    height: 100%
