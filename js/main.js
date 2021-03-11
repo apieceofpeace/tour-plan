@@ -26,7 +26,7 @@ const reviewsSlider= new Swiper('.reviews-slider', {
 });
 
 $('.parallax-window').parallax({
-  imageSrc: '../img/newsletter-bg.jpg',
+  imageSrc: 'img/newsletter-bg.jpg',
   naturalWidth: '2880',
   naturalHeight:'1913',
   speed: '0.4',
