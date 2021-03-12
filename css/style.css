@@ -912,6 +912,10 @@ img {
   height: 100%;
   right: 0;
   top: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
   border: none;
   background-color: #EC1F46;
   color: #ffffff;
@@ -991,12 +995,12 @@ img {
 
 .reviews-slider__button--prev {
   background-image: url(../img/arrow-prev-secondary.svg);
-  left: 0;
+  left: 10px;
 }
 
 .reviews-slider__button--next {
   background-image: url(../img/arrow-next-secondary.svg);
-  right: 0;
+  right: 10px;
 }
 
 .reviews-slider__profile {
@@ -1164,6 +1168,12 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .reviews-slider__button--next {
+    right: 0;
+  }
+  .reviews-slider__button--prev {
+    left: 0;
+  }
   .card {
     width: 230px;
     height: 230px;
@@ -1250,7 +1260,7 @@ img {
   }
   .card {
     width: 340px;
-    height: 230px;
+    height: 250px;
   }
 }
 
@@ -1440,6 +1450,9 @@ img {
   .newsletter-title__strong {
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews-slider__text {
+    max-height: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
