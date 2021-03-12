@@ -1262,6 +1262,9 @@ img {
     width: 340px;
     height: 250px;
   }
+  .activities {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1421,6 +1424,10 @@ img {
   .card {
     width: 100%;
   }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1453,6 +1460,13 @@ img {
   }
   .reviews-slider__text {
     max-height: 250px;
+  }
+  .activities__title {
+    margin-bottom: 36px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */
