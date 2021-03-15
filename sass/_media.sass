@@ -83,6 +83,7 @@
     padding-bottom: 50px
   .footer
     padding-top: 73px
+    padding-bottom: 33px
     &__title
       &--resp
         font-size: 16px
@@ -116,6 +117,11 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__bottom
+      justify-content: space-between
+      margin-top: 56px
+      &-pay
+        margin-left: 0
 
 @media (max-width: 767px)
   .container
@@ -254,9 +260,19 @@
       &-form
         grid-row: 7
         grid-column: 1
+        margin-bottom: 30px
     &__title
       &--resp
         font-size: 18px
+    &__form
+      margin-bottom: 10px
+    &__bottom
+      flex-direction: column
+      align-items: flex-start
+      margin-top: -3px
+      &-ul
+        width: 277px
+        margin-bottom: 10px
 
 @media (max-width: 400px)
   .container
@@ -291,6 +307,7 @@
       font-size: 18px
       line-height: 23px
   .footer
+    padding-bottom: 21px
     &-wrapper
       grid-row-gap: 30px
     &__item
@@ -316,7 +333,7 @@
       font-weight: normal
       font-size: 12px
       line-height: 15px
-      margin-bottom: 10px
+      margin-bottom: 15px
     &__social
       &-network
         display: flex
@@ -341,17 +358,20 @@
         grid-row: 6
         grid-column: 1
         padding-top: 11px
-    &-form
+    &__form
       grid-row: 7
       grid-column: 1
+      margin-bottom: 30px
     &-info
       display: flex
       flex-direction: column
       height: 80px
       justify-content: space-between
+      align-items: flex-start
     &__info
       grid-row: 8
       grid-column: 1
+      margin-bottom: 15px
     &__button
       order: 1
     &__icon
