@@ -37,5 +37,5 @@ menuButton.addEventListener("click", function () {
   console.log("клик");
   document
     .querySelector(".navbar-bottom")
-    .classList.toggle(".navbar-bottom_visible");
+    .classList.toggle("navbar-bottom_visible");
 });
