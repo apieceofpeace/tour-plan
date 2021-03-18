@@ -1671,8 +1671,29 @@ img {
     max-width: 576px;
     width: 92%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 80px;
+  }
+  .navbar__mobile_fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 15;
+  }
+  .navbar__search, .navbar__user {
     display: none;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 80px;
+  }
+  .navbar-bottom__visible {
+    display: block;
   }
   .menu-button {
     display: -webkit-box;
