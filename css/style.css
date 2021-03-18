@@ -1695,6 +1695,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 8px;
   }
   .navbar__user {
     -webkit-box-orient: vertical;
@@ -1712,7 +1713,7 @@ img {
     right: 0;
     bottom: 0;
     top: 71px;
-    padding-top: 30px;
+    padding-top: 9px;
   }
   .navbar-bottom_visible {
     display: block;
@@ -1724,10 +1725,13 @@ img {
             flex-direction: column;
   }
   .navbar-menu__item {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
   .navbar-menu__item_mobile_visible {
     display: block;
+  }
+  .navbar-menu__item_mobile_visible_mb-1 {
+    margin-bottom: 31px;
   }
   .menu-button {
     display: -webkit-box;
@@ -1977,6 +1981,9 @@ img {
 @media (max-width: 400px) {
   .container {
     width: 88%;
+  }
+  .search__input {
+    width: 245px;
   }
   .hotel {
     padding-bottom: 20px;

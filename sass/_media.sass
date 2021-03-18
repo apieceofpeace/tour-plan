@@ -154,6 +154,7 @@
           display: none
         &_visible
           display: flex
+          margin-bottom: 8px
     &__user
       flex-direction: column
       justify-content: center
@@ -164,16 +165,18 @@
       right: 0
       bottom: 0
       top: 71px
-      padding-top: 30px
+      padding-top: 9px
       &_visible
         display: block
     &-menu
       flex-direction: column
       &__item
-        margin-bottom: 20px
+        margin-bottom: 17px
         &_mobile
           &_visible
             display: block
+            &_mb-1
+              margin-bottom: 31px
   .menu
     &-button
       display: flex
@@ -339,6 +342,9 @@
 @media (max-width: 400px)
   .container
     width: 88%
+  .search
+    &__input
+      width: 245px
   .hotel
     padding-bottom: 20px
     &-right
