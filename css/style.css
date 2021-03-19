@@ -1180,6 +1180,10 @@ img {
           align-items: start;
 }
 
+.footer__up {
+  display: contents;
+}
+
 .footer__logo {
   width: 166px;
   -ms-grid-row: 1;
@@ -1297,6 +1301,10 @@ img {
 .footer__text {
   color: #BDBDBD;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__link {
@@ -1313,32 +1321,6 @@ img {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  padding-top: 18px;
-  padding-left: 23px;
-}
-
-.footer__input::-webkit-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.footer__input:-ms-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.footer__input::-ms-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.footer__input::placeholder {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -1580,6 +1562,9 @@ img {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews-slider__button {
+    top: 61%;
+  }
   .activities {
     padding-bottom: 50px;
     padding-top: 68px;
@@ -1676,7 +1661,7 @@ img {
     width: 92%;
   }
   body {
-    padding-top: 80px;
+    padding-top: 67px;
   }
   .navbar-top {
     padding-top: 23px;
@@ -1717,6 +1702,7 @@ img {
   }
   .navbar-bottom_visible {
     display: block;
+    overflow: auto;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
