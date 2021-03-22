@@ -69,7 +69,7 @@ if ( $form == "sendmsg" ){
 }
 if ( $form == "sendemail")
 {
-    header('Location: message-send.html');
+    header('Location: email-send.html');
 }
 
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
