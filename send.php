@@ -9,16 +9,25 @@ $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 $email = $_POST['email'];
+$form = $_POST['form'];
 
-// Формирование самого письма
+if ( $form == "sendmsg" ){
 $title = "Новое обращение Best Tour Plan";
 $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message <br>
-<b>email для рассылки:</b> $email
 ";
+}
+if ( $form == "sendemail")
+{
+$title = "Новое обращение Best Tour Plan";
+$body = "
+<b>Новый email для рассылки:</b> $email
+";
+}
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
@@ -32,7 +41,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
     $mail->Username   = 'OkkoViewer@gmail.com'; // Логин на почте
-    $mail->Password   = 'parolpasswordsuka'; // Пароль на почте
+    $mail->Password   = 'zntualzbkbieakio'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('OkkoViewer@gmail.com', 'Никита Никита'); // Адрес самой почты и имя отправителя
@@ -55,4 +64,12 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header('Location: message-send.html');
+if ( $form == "sendmsg" ){
+    header('Location: message-send.html');
+}
+if ( $form == "sendemail")
+{
+    header('Location: message-send.html');
+}
+
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

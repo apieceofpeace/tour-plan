@@ -1,4 +1,5 @@
-const hotelSlider = new Swiper('.hotel-slider', {
+$(document).ready(function () {
+  const hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
@@ -38,4 +39,15 @@ menuButton.addEventListener("click", function () {
   document
     .querySelector(".navbar-bottom")
     .classList.toggle("navbar-bottom_visible");
+});
+
+  var modalButton = $('[data-toggle=modal]');
+  modalButton.on('click', openModal);
+   
+  function openModal() {
+    var modalDialog = $(".modal__dialog");
+    var modalOverlay = $(".modal__overlay");
+    modalOverlay.addClass("modal__overlay_visible");
+    modalDialog.addClass("modal__dialog_visible");
+  }
 });
