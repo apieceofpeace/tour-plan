@@ -1327,6 +1327,22 @@ img {
   line-height: 15px;
 }
 
+.footer__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input:-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::-ms-input-placeholder {
+  color: #BDBDBD;
+}
+
+.footer__input::placeholder {
+  color: #BDBDBD;
+}
+
 .footer__message {
   background-color: #fff;
   border-radius: 4px;
@@ -1337,34 +1353,26 @@ img {
   height: 123px;
   resize: none;
   margin-bottom: 23px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__message::-webkit-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__message:-ms-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__message::-ms-input-placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__message::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer-info {
@@ -1392,6 +1400,7 @@ img {
   color: #ffffff;
   background-color: #EC1F46;
   border: none;
+  cursor: pointer;
 }
 
 .footer__info {
