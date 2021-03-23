@@ -48,7 +48,7 @@ menuButton.on("click", function () {
     // ESCAPE key pressed
     if (e.keyCode == 27) {
       console.log("escape");
-      closeModal();
+      closeModal(event);
     }
   });
   
