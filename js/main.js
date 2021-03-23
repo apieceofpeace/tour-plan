@@ -84,4 +84,9 @@ menuButton.on("click", function () {
       },
     });
   });
+
+  //валидация номера телефона
+  $('.input-phone').ready(function () {
+    $('.input-phone').mask('8 (000) 000-00-00');
+  });
 });
