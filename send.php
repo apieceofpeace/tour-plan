@@ -27,6 +27,17 @@ $body = "
 <b>Новый email для рассылки:</b> $email
 ";
 }
+if ( $form == "sendall")
+{
+$title = "Новое обращение Best Tour Plan";
+$body = "
+<h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br><br>
+<b>Сообщение:</b><br>$message <br>
+<b>Новый email для рассылки:</b> $email
+";
+}
 
 
 // Настройки PHPMailer
@@ -70,6 +81,10 @@ if ( $form == "sendmsg" ){
 if ( $form == "sendemail")
 {
     header('Location: email-send.html');
+}
+if ( $form == "sendall")
+{
+    header('Location: message-send.html');
 }
 
 // echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);

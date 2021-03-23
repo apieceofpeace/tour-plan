@@ -33,21 +33,36 @@ $('.parallax-window').parallax({
   speed: '0.4',
 });
 
-var menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", function () {
-  console.log("клик");
-  document
-    .querySelector(".navbar-bottom")
-    .classList.toggle("navbar-bottom_visible");
+var menuButton = $(".menu-button");
+menuButton.on("click", function () {
+  $(".navbar-bottom").toggleClass("navbar-bottom_visible");
 });
 
   var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $('.modal__close');
   modalButton.on('click', openModal);
-   
+  closeModalButton.on('click', closeModal);
+
+
+  $(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+      console.log("escape");
+      closeModal();
+    }
+  });
+  
   function openModal() {
     var modalDialog = $(".modal__dialog");
     var modalOverlay = $(".modal__overlay");
     modalOverlay.addClass("modal__overlay_visible");
     modalDialog.addClass("modal__dialog_visible");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalDialog = $(".modal__dialog");
+    var modalOverlay = $(".modal__overlay");
+    modalOverlay.removeClass("modal__overlay_visible");
+    modalDialog.removeClass("modal__dialog_visible");
   }
 });

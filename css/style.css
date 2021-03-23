@@ -1498,19 +1498,22 @@ img {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .modal__overlay_visible {
   visibility: visible;
-  opasity: 1;
+  opacity: 1;
 }
 
 .modal__dialog {
   position: fixed;
-  top: 50%;
+  top: 45%;
   left: 50%;
   max-width: 478px;
-  padding: 33px 88px;
+  min-height: 487px;
+  padding: 35px 88px;
   background-color: #0A223D;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1523,7 +1526,7 @@ img {
 
 .modal__dialog_visible {
   visibility: visible;
-  opasity: 1;
+  opacity: 1;
 }
 
 .modal__close {
@@ -1538,6 +1541,7 @@ img {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
+  margin-top: 0;
   margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
@@ -1546,12 +1550,16 @@ img {
 .modal__input {
   width: 100%;
   margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .modal-info {
@@ -1769,6 +1777,9 @@ img {
   .footer__bottom-pay {
     margin-left: 0;
   }
+  .modal__dialog {
+    padding: 35px 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1953,6 +1964,18 @@ img {
     margin-left: 0;
     margin-top: 0;
   }
+  .modal__dialog {
+    padding: 35px 30px;
+  }
+  .modal-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__button {
+    margin-bottom: 15px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2077,6 +2100,19 @@ img {
   .footer__bottom-ul {
     width: 277px;
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    padding: 35px 30px;
+    width: 80%;
+  }
+  .modal-info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .modal__button {
+    margin-bottom: 0;
   }
 }
 
@@ -2241,6 +2277,19 @@ img {
   }
   .footer__bottom {
     margin-top: -3px;
+  }
+  .modal__dialog {
+    padding: 35px 20px;
+    width: 95%;
+  }
+  .modal-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal__button {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */

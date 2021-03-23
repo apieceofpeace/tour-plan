@@ -9,15 +9,17 @@
     z-index: 100
     visibility: hidden
     opacity: 0
+    transition: opacity 0.4s
     &_visible
       visibility: visible
-      opasity: 1
+      opacity: 1
   &__dialog
     position: fixed
-    top: 50%
+    top: 45%
     left: 50%
     max-width: 478px
-    padding: 33px 88px
+    min-height: 487px
+    padding: 35px 88px
     background-color: $dark
     transform: translate(-50%, -50%)
     color: $light
@@ -27,7 +29,7 @@
     opacity: 0
     &_visible
       visibility: visible
-      opasity: 1
+      opacity: 1
   &__close
     position: absolute
     right: 18px
@@ -38,16 +40,21 @@
     font-weight: bold
     font-size: 18px
     line-height: 23px
+    margin-top: 0
     margin-bottom: 15px
     text-transform: uppercase
     text-align: center
   &__input
     width: 100%
     margin-bottom: 15px
+    font-size: 12px
+    line-height: 15px
   &__message
     width: 100%
     min-height: 123px
     margin-bottom: 15px
+    font-size: 12px
+    line-height: 15px
   &-info
     display: flex
     justify-content: space-between

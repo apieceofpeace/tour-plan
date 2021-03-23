@@ -718,7 +718,7 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Icon: close" />
         </a>
-        <h3 class="modal__title modal__title--mb-3">Send us a message</h3>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
         <form action="send.php" method="POST" class="modal__form">
           <input
             type="text"
@@ -744,7 +744,14 @@
             name="message"
           ></textarea>
           <div class="modal-info">
-            <button class="button modal__button" type="submit">Send</button>
+            <button
+              class="button modal__button"
+              type="submit"
+              name="form"
+              value="sendall"
+            >
+              Send
+            </button>
             <span class="modal__info">* Required Fields</span>
           </div>
           <!-- /.modal-info -->
