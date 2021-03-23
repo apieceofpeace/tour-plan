@@ -47,7 +47,6 @@ menuButton.on("click", function () {
   $(document).keydown(function(e) {
     // ESCAPE key pressed
     if (e.keyCode == 27) {
-      console.log("escape");
       closeModal(event);
     }
   });
@@ -65,4 +64,24 @@ menuButton.on("click", function () {
     modalOverlay.removeClass("modal__overlay_visible");
     modalDialog.removeClass("modal__dialog_visible");
   }
+
+  //обработка форм
+  $('.form').each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Введите имя",
+          minlength: "Имя должно содержать не менее двух символов",
+        },
+        email: {
+          required: "Введите адрес электронной почты",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Введите телефон",
+        },
+      },
+    });
+  });
 });
