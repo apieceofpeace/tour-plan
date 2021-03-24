@@ -297,7 +297,7 @@
         >
           <input
             type="email"
-            class="subscribe__input"
+            class="subscribe__input input"
             placeholder="Your email address"
             name="email"
             required
@@ -671,16 +671,18 @@
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
+                  minlength="2"
                   required
                 />
               </div>
               <!-- /.footer__input-group -->
               <div class="footer__input-group">
                 <input
-                  type="text"
+                  type="tel"
                   class="input footer__input input-phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="17"
                   required
                 />
               </div>
@@ -721,9 +723,60 @@
       <!-- /.container -->
     </footer>
     <div class="modal">
-      <div class="modal__overlay"></div>
+      <div class="modal__overlay">
+        <div class="modal__dialog">
+          <div class="close-fix">
+            <a href="#" class="modal__close">
+              <img src="img/close.svg" alt="Icon: close" />
+            </a>
+          </div>
+          <h3 class="modal__title modal__title--mb-3">Booking</h3>
+          <form action="send.php" method="POST" class="form modal__form">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+            <input
+              type="tel"
+              class="input modal__input input-phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="17"
+            />
+            <input
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+            <textarea
+              class="message modal__message"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+            <div class="modal-info">
+              <button
+                class="button modal__button"
+                type="submit"
+                name="form"
+                value="sendall"
+              >
+                Send
+              </button>
+              <span class="modal__info">* Required Fields</span>
+            </div>
+            <!-- /.modal-info -->
+          </form>
+        </div>
+      </div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+      <!-- <div class="modal__dialog">
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Icon: close" />
         </a>
@@ -743,6 +796,7 @@
             placeholder="Phone Number*"
             name="phone"
             required
+            minlength="17"
           />
           <input
             type="email"
@@ -766,10 +820,10 @@
               Send
             </button>
             <span class="modal__info">* Required Fields</span>
-          </div>
-          <!-- /.modal-info -->
-        </form>
-      </div>
+          </div> -->
+      <!-- /.modal-info -->
+      <!-- </form>
+      </div> -->
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->

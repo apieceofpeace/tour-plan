@@ -138,6 +138,8 @@
   .modal
     &__dialog
       padding: 35px 50px
+    &__close
+      transform: translate(90%, -60%)
 
 @media (max-width: 767px)
   .container
@@ -270,9 +272,11 @@
     &__dialog
       padding: 35px 30px
     &-info
-      flex-direction: column
+      flex-direction: row
     &__button
       margin-bottom: 15px
+    &__close
+      transform: translate(-20%, -60%)
 
 @media (max-width: 576px)
   .logo
@@ -480,3 +484,5 @@
       align-items: start
     &__button
       margin-bottom: 15px
+    &__close
+      transform: translate(-100%, -60%)

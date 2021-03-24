@@ -1,6 +1,4 @@
 .modal
-  &__form
-    overflow: auto
   &__overlay
     position: fixed
     top: 0
@@ -13,38 +11,46 @@
     opacity: 0
     transition: opacity 0.4s
     &_visible
+      display: flex
+      justify-content: center
+      align-items: center
       visibility: visible
       opacity: 1
+      overflow: auto
   &__dialog
-    position: fixed
+    // position: absolute
     top: 45%
     left: 50%
-    max-width: 478px
+    width: 478px
     min-height: 487px
+    max-height: 590px
     padding: 35px 88px
     background-color: $dark
-    transform: translate(-50%, -50%)
+    // transform: translate(-50%, -50%)
     color: $light
     border-radius: 8px
     z-index: 101
     visibility: hidden
     opacity: 0
+    margin: auto
     &_visible
+      display: block
       visibility: visible
       opacity: 1
-      overflow: auto
+      margin-top: 185px
   &__close
     position: absolute
-    right: 18px
-    top: 17px
+    // right: 18px
+    // top: 17px
     text-decoration: none
+    transform: translate(300%, -60%)
   &__title
     font-style: normal
     font-weight: bold
     font-size: 18px
     line-height: 23px
     margin-top: 0
-    margin-bottom: 15px
+    margin-bottom: 10px
     text-transform: uppercase
     text-align: center
   &__input
@@ -71,3 +77,7 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+.close
+  &-fix
+    // position: relative
+    margin-left: 100%

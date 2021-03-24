@@ -71,15 +71,16 @@ menuButton.on("click", function () {
       errorClass: "invalid",
       messages: {
         name: {
-          required: "Введите имя",
-          minlength: "Имя должно содержать не менее двух символов",
+          required: "Enter your name",
+          minlength: "The name must contain at least 2 characters",
         },
         email: {
-          required: "Введите адрес электронной почты",
-          email: "Your email address must be in the format of name@domain.com"
+          required: "Please enter your email address",
+          email: "Addres format must be name@domain.com"
         },
         phone: {
-          required: "Введите телефон",
+          required: "Enter correct phone number",
+          minlength: "Enter correct phone number",
         },
       },
     });
@@ -87,6 +88,6 @@ menuButton.on("click", function () {
 
   //валидация номера телефона
   $('.input-phone').ready(function () {
-    $('.input-phone').mask('8 (000) 000-00-00');
+    $('.input-phone').mask('+7(000) 000-00-00');
   });
 });
