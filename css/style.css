@@ -1482,6 +1482,11 @@ img {
   line-height: 15px;
 }
 
+.footer__bottom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .footer__bottom-pay {
   margin-left: 277px;
 }
@@ -1515,6 +1520,8 @@ img {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .modal__overlay_visible {
@@ -1552,7 +1559,6 @@ img {
   display: block;
   visibility: visible;
   opacity: 1;
-  margin-top: 185px;
 }
 
 .modal__close {

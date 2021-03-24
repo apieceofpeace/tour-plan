@@ -318,16 +318,18 @@
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
+                  minlength="2"
                   required
                 />
               </div>
               <!-- /.footer__input-group -->
               <div class="footer__input-group">
                 <input
-                  type="text"
+                  type="tel"
                   class="input footer__input input-phone"
                   placeholder="Phone Number*"
                   name="phone"
+                  minlength="17"
                   required
                 />
               </div>
@@ -367,9 +369,12 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
