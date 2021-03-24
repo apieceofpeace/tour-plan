@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Best Tour Plan</title>
   </head>
@@ -22,7 +23,14 @@
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a
+            href="#"
+            class="logo"
+            data-aos="fade-right"
+            data-aos-delay="300"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src="img/horizon-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -286,7 +294,11 @@
     </section>
     <section class="newsletter parallax-window">
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2
+          class="newsletter-title newsletter__title"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
@@ -294,6 +306,8 @@
           action="send.php"
           method="POST"
           class="form subscribe newsletter__subscribe"
+          data-aos="fade-up"
+          data-aos-duration="2500"
         >
           <input
             type="email"
@@ -311,11 +325,17 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about&nbsp;us</h2>
+        <h2 class="reviews__title" data-aos="fade-up" data-aos-duration="1500">
+          What people think about&nbsp;us
+        </h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="reviews-slider__item">
+              <div
+                class="reviews-slider__item"
+                data-aos="fade-up"
+                data-aos-duration="2500"
+              >
                 <div class="reviews-slider__profile">
                   <img
                     src="img/reviews-avatar.jpg"
@@ -455,7 +475,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -468,7 +492,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -481,7 +509,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -494,7 +526,11 @@
             <button data-toggle="modal" class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="900"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -700,6 +736,8 @@
                   type="submit"
                   name="form"
                   value="sendmsg"
+                  data-aos="flip-left"
+                  data-aos-delay="200"
                 >
                   Send
                 </button>
@@ -833,6 +871,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

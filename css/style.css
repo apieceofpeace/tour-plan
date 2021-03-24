@@ -1515,8 +1515,6 @@ img {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
 }
 
 .modal__overlay_visible {

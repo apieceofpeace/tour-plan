@@ -90,4 +90,5 @@ menuButton.on("click", function () {
   $('.input-phone').ready(function () {
     $('.input-phone').mask('+7(000) 000-00-00');
   });
+  AOS.init();
 });
